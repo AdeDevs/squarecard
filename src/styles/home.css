@@ -42,10 +42,11 @@
     font-size: 15px;
     cursor: pointer;
     transition: 400ms;
-    &:hover {
-        background-color: #cefb53;
-        color: #fff;
-    }
+}
+
+.text .btn:hover {
+    background-color: #cefb53;
+    color: #fff;
 }
 
 .text .btn ion-icon {
@@ -60,6 +61,8 @@
     background-repeat: no-repeat;
 }
 
+
+
 @media (max-width: 950px) {
     .text .btn {
         width: 50%;
@@ -70,13 +73,16 @@
     .home-box .landing {
         flex-direction: column;
     }
+
     .landing div {
         width: 100%;
         padding: 10px 0;
     }
+
     .text > p {
         margin: 30px 0;
     }
+
     .landing .bg {
         height: 50vh;
     }
