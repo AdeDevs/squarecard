@@ -1,0 +1,78 @@
+.home-box {
+    box-sizing: border-box;
+    padding: 10px 20px;
+    font-family: "Montserrat", sans-serif;
+    background-color: #f1f2f4;
+}
+
+.home-box .landing {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.landing div {
+    width: 48%;
+}
+
+.landing .text {
+    display: inline-flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+}
+
+.text h1 {
+    font-size: 3em;
+}
+
+.text > p {
+    font-size: 14px;
+    margin: 50px 0;
+}
+
+.text .btn {
+    width: 30%;
+    padding: 10px;
+    border-radius: 30px;
+    border: 2px solid #000;
+    background-color: #bcf324;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 15px;
+}
+
+.text .btn ion-icon {
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.landing .bg {
+    background-image: url(../assets/card.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 950px) {
+    .text .btn {
+        width: 50%;
+    }
+}
+
+@media (max-width: 700px) {
+    .home-box .landing {
+        flex-direction: column;
+    }
+    .landing div {
+        width: 100%;
+        padding: 10px 0;
+    }
+    .text > p {
+        margin: 30px 0;
+    }
+    .landing .bg {
+        height: 50vh;
+    }
+}
