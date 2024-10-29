@@ -1,89 +1,160 @@
 .home-box {
-    box-sizing: border-box;
-    padding: 10px 25px;
-    font-family: "Montserrat", sans-serif;
-    background-color: #f1f2f4;
+  box-sizing: border-box;
+  padding: 10px 25px;
+  font-family: "Montserrat", sans-serif;
+  background-color: #f1f2f4;
 }
 
 .home-box .landing {
-    display: flex;
-    justify-content: space-between;
-    box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  height: 55vh;
 }
 
 .landing div {
-    width: 48%;
+  width: 48%;
 }
 
 .landing .text {
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: center;
+  display: inline-flex;
+  flex-direction: column;
+  padding: 20px 0;
+  justify-content: space-between;
+  height: 100%;
+  box-sizing: border-box;
 }
 
 .text h1 {
-    font-size: 3em;
+  font-size: 3em;
 }
 
 .text > p {
-    font-size: 14px;
-    margin: 50px 0;
+  font-size: 14px;
 }
 
 .text .btn {
-    width: 30%;
-    padding: 10px;
-    border-radius: 30px;
-    border: 2px solid #000;
-    background-color: #b9fa05;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 15px;
-    cursor: pointer;
-    transition: 400ms;
+  width: 50%;
+  padding: 10px;
+  border-radius: 30px;
+  border: 2px solid #000;
+  background-color: #b9fa05;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 400ms;
 }
 
 .text .btn:hover {
-    background-color: #cefb53;
-    color: #fff;
+  background-color: #cefb53;
+  color: #000;
 }
 
 .text .btn ion-icon {
-    margin-left: 10px;
-    font-size: 20px;
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.text .sponsors {
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sponsors li {
+  margin: 0 10px;
+  display: inline-flex;
+}
+
+.sponsors-container {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  display: none;
+}
+
+.sponsors-container .sponsors {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  animation: scroll 15s linear infinite;
+  /* Make sure to use a longer duration for smoother scrolling */
+}
+
+.mob-sponsors li {
+  margin: 0 10px;
+  display: inline-flex;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.sponsors img {
+  width: 80px;
+  height: 30px;
 }
 
 .landing .bg {
-    background-image: url(../assets/card.png);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+  background-image: url(../assets/card.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
-
-
-@media (max-width: 950px) {
-    .text .btn {
-        width: 50%;
-    }
+@media (max-width: 850px) {
+  .home-box .landing {
+    height: 60vh;
+  }
+  .text h1 {
+    font-size: 2.5em;
+  }
+  .text .btn {
+    width: 70%;
+  }
 }
 
 @media (max-width: 700px) {
-    .home-box .landing {
-        flex-direction: column;
-    }
+  .home-box .landing {
+    flex-direction: column;
+    height: auto;
+  }
 
-    .landing div {
-        width: 100%;
-        padding: 10px 0;
-    }
+  .landing div {
+    width: 100%;
+    padding: 10px 0;
+  }
 
-    .text > p {
-        margin: 30px 0;
-    }
+  .text > p {
+    margin: 30px 0;
+  }
 
-    .landing .bg {
-        height: 50vh;
-    }
+  .landing .bg {
+    height: 50vh;
+  }
+  .text .sponsors {
+    margin: 40px 0;
+    display: none;
+  }
+  .text .btn {
+    width: 50%;
+    box-sizing: border-box;
+  }
+  .text .sponsors {
+    display: none;
+  }
+  .sponsors-container {
+    display: inline-flex;
+    margin: 20px 0;
+    box-sizing: border-box;
+  }
 }
