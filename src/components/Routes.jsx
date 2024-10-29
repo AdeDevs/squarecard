@@ -83,7 +83,7 @@ function NavRoute() {
             Login
           </a>
           <label htmlFor="check" className="close-menu">
-            <ion-icon name="close-outline" color="dark"></ion-icon>
+            <ion-icon name="close-outline" color="white"></ion-icon>
           </label>
         </ul>
 
