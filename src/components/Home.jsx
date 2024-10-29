@@ -58,6 +58,42 @@ function HomeScreen() {
           </ul>
         </div>
       </header>
+      <main>
+        <div className="banking-services">
+          <div className="services-info">
+            <div>
+              <h1>We tried to provide you with all global banking services</h1>
+            </div>
+            <div>
+              <p>
+                We made every effort to ensure that you have access to a comprehensive range of global banking services. Our aim was to provide you with a seamless banking experience that caters to your financial needs regardles of your location.
+              </p>
+              <section className="btn">
+              <p>Explore More</p>
+              <ion-icon name="return-up-forward-outline"></ion-icon>
+              </section>
+            </div>
+          </div>
+          {/* <div className="services-illst">
+            <section>
+              <h1></h1>
+              <img src="" alt="" />
+            </section>
+            <section>
+              <h1></h1>
+              <img src="" alt="" />
+            </section>
+            <section>
+              <h1></h1>
+              <img src="" alt="" />
+            </section>
+            <section>
+              <h1></h1>
+              <img src="" alt="" />
+            </section>
+          </div> */}
+        </div>
+      </main>
     </div>
   );
 }

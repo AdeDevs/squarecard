@@ -12,7 +12,7 @@
   height: 55vh;
 }
 
-.landing div {
+.landing > div {
   width: 48%;
 }
 
@@ -31,9 +31,10 @@
 
 .text > p {
   font-size: 14px;
+  text-transform: capitalize;
 }
 
-.text .btn {
+ .btn {
   width: 50%;
   padding: 10px;
   border-radius: 30px;
@@ -47,7 +48,7 @@
   transition: 400ms;
 }
 
-.text .btn:hover {
+ .btn:hover {
   background-color: #cefb53;
   color: #000;
 }
@@ -111,6 +112,56 @@
   background-repeat: no-repeat;
 }
 
+main {
+  margin: 35px 0 0 0;
+  padding: 10px 0;
+  height: auto;
+}
+
+.banking-services {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.banking-services .services-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.services-info div {
+  width: 50%;
+}
+
+.services-info h1 {
+  width: 90%;
+  font-weight: 500;
+  font-size: 2.8em;
+}
+
+.services-info p {
+  font-size: 15px;
+  width: 90%;
+}
+
+.services-info div:nth-last-child(1) {
+  display: inline-flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.services-info .btn {
+  background-color: #000;
+  color: #fff;
+  width: 50%;
+  &:hover {
+    background-color: #f1f2f4;
+    border: 2px solid #000;
+    color: #000;
+  }
+}
+
 @media (max-width: 850px) {
   .home-box .landing {
     height: 60vh;
@@ -120,6 +171,13 @@
   }
   .text .btn {
     width: 70%;
+  }
+  .services-info div{
+    width: 100%;
+    margin: 10px 0;
+  }
+  .services-info .btn {
+    margin-top: 30px;
   }
 }
 
