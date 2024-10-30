@@ -27,6 +27,7 @@
 
 .text h1 {
   font-size: 3em;
+  font-weight: 500;
 }
 
 .text > p {
@@ -122,12 +123,16 @@ main {
   box-sizing: border-box;
   width: 100%;
   margin: 0 auto;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 40px 20px;
 }
 
 .banking-services .services-info {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-bottom: 30px;
 }
 
 .services-info div {
@@ -136,6 +141,7 @@ main {
 
 .services-info h1 {
   width: 90%;
+  text-transform: capitalize;
   font-weight: 500;
   font-size: 2.8em;
 }
@@ -143,6 +149,7 @@ main {
 .services-info p {
   font-size: 15px;
   width: 90%;
+  text-transform: capitalize;
 }
 
 .services-info div:nth-last-child(1) {
@@ -154,11 +161,151 @@ main {
 .services-info .btn {
   background-color: #000;
   color: #fff;
-  width: 50%;
+  width: 30%;
   &:hover {
     background-color: #f1f2f4;
     border: 2px solid #000;
     color: #000;
+  }
+}
+
+.banking-services .services-illst {
+  padding: 20px 10px;
+  width: 100%;
+  box-sizing: border-box;
+  display: inline-flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.services-illst section {
+  width: 23%;
+  height: 250px;
+  padding: 40px 0;
+  border-radius: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: 400ms;
+  cursor: pointer;
+  &:hover, &.active {
+    background-color: #e6e6ff;
+  }
+}
+
+.services-illst section h1 {
+  font-weight: 500;
+  width: 80%;
+  margin: 0 auto;
+  text-transform: capitalize;
+}
+
+.services-illst img {
+  width: 135px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  &#upsize {
+    width: 160px;
+  }
+}
+
+.fast-banking {
+  margin: 10px 0 0 0;
+  padding: 20px 10px;
+  box-sizing: border-box;
+}
+
+.fast-banking header {
+  box-sizing: border-box;
+  width: 100%;
+  display: inline-flex;
+  margin: 20px 0;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.fast-banking header h1 {
+  font-weight: 500;
+  font-size: 2.5em;
+  text-transform: capitalize;
+  line-height: normal;
+  width: 50%;
+}
+
+.nav-btn button {
+  margin: 0 0 5px 10px;
+  display: inline-flex;
+  align-items: center;
+  background-color: #fff;
+  border: none;
+  font-size: 20px;
+  padding: 7px 18px;
+  border-radius: 20px;
+  transition: 400ms;
+  &.active, &:hover {
+    background-color: #b9fa05;
+    padding: 7px 25px;
+    border: 2px solid #000;
+  }
+}
+
+.fast-banking .services-box {
+  display: inline-flex;
+  width: 100%;
+  box-sizing: border-box;
+  justify-content: space-between;
+  overflow: hidden;
+  margin: 10px 0;
+  scrollbar-width: none;
+  overflow-x: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.services-box section {
+  background-color: #fff;
+  min-width: 38%;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 0;
+  box-sizing: border-box;
+  border-radius: 20px;
+  margin: 0 30px 0 0;
+  transition: 300ms;
+  cursor: pointer;
+  &:hover, &.active {
+    background-color: #e6e6ff;
+  }
+}
+
+.services-box h1 {
+  font-weight: 500;
+  font-size: 1.4em;
+  text-transform: capitalize;
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.services-box p {
+  width: 80%;
+  text-align: center;
+  font-size: 14px;
+  color: #5d5d5d;
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
+  margin: 30px 0 60px 0;
+}
+
+.services-box img {
+  width: 140px;
+  &#upscale {
+    width: 70%;
   }
 }
 
@@ -179,12 +326,36 @@ main {
   .services-info .btn {
     margin-top: 30px;
   }
+  .services-illst section {
+    width: 49%;
+    margin: 5px 0;
+  }
+  .fast-banking header {
+    display: block;
+  }
+  .fast-banking header h1 {
+    width: 100%;
+    font-size: 1.9em;
+  }
+  .nav-btn {
+    width: 100%;
+    text-align: right;
+  }
+  .nav-btn button {
+    margin: 10px 0 10px 10px ;
+  }
+  .services-box section {
+    min-width: 50%;
+  }
 }
 
 @media (max-width: 700px) {
   .home-box .landing {
     flex-direction: column;
     height: auto;
+  }
+  .services-illst section {
+    width: 100%;
   }
 
   .landing div {
@@ -215,4 +386,31 @@ main {
     margin: 20px 0;
     box-sizing: border-box;
   }
+  .services-info .btn {
+    width: 50%;
+  }
+  .services-box section {
+    min-width: 80%;
+  }
+}
+
+
+@media (max-width: 450px) {
+  .services-box section {
+    min-width: 95%;
+    padding: 30px 10px;
+    margin: 0 15px 0 0;
+  }
+  .services-box h1 {
+    width: 100%;
+  }
+  .services-box p {
+    box-sizing: border-box;
+    width: 100%;
+  }
+  .services-box img{
+   &#upscale {
+    width: 100%;
+  }
+}
 }
