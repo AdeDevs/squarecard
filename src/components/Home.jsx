@@ -137,6 +137,9 @@ function HomeScreen() {
           </div>
         </div>
       </main>
+      <div className="features">
+        
+      </div>
     </div>
   );
 }
