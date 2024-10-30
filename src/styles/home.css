@@ -53,7 +53,7 @@
 }
 
  .btn:hover {
-  background-color: #cefb53;
+  background-color: #a56dfd;
   color: #000;
 }
 
@@ -106,7 +106,7 @@
 
 .sponsors img {
   width: 80px;
-  height: 30px;
+  height: auto;
 }
 
 .landing .bg {
@@ -166,7 +166,7 @@ main {
   color: #fff;
   width: 30%;
   &:hover {
-    background-color: #f1f2f4;
+    background-color: #a56dfd;
     border: 2px solid #000;
     color: #000;
   }

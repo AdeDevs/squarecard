@@ -1,7 +1,7 @@
-import ArsenalBio from "../assets/arsenalbio.svg";
-import Mit from "../assets/mit.svg";
-import Precision from "../assets/precision.svg";
-import Stretch from "../assets/stretch.svg";
+import ArsenalBio from "../assets/arsenalbio.png";
+import Mit from "../assets/mit.png";
+import Precision from "../assets/precision.png";
+import Stretch from "../assets/stretch.png";
 import Center from "../assets/center.png";
 import Circles from "../assets/circles.png";
 import Ticks from "../assets/ticks.png";
@@ -138,7 +138,7 @@ function HomeScreen() {
         </div>
       </main>
       <div className="features">
-        
+
       </div>
     </div>
   );
