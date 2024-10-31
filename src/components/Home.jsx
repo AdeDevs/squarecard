@@ -9,6 +9,7 @@ import Bottom from "../assets/shield.png";
 import Types from "../assets/types.png";
 import Open from "../assets/opening.png";
 import Analysis from "../assets/analysis.png";
+import Logo from "../assets/logo.png"
 import { useState } from "react";
 
 function HomeScreen() {
@@ -138,8 +139,74 @@ function HomeScreen() {
         </div>
       </main>
       <div className="features">
-
+        <section className="one">
+          <h1>
+            what feautures make our <button>from 2022</button> bank card <span>distinctive</span> and <span> popular</span> ?
+          </h1>
+          <p>
+            according to the needs of users and different strata, we have provided a new bank card that can be the answer to all your needs.
+          </p>
+        </section>
+        <section className="two"></section>
+        <section className="three">
+          <ul>
+            <li> <span>1</span> personalization feature</li>
+            <li> <span>2</span> ease of use</li>
+            <li> <span>3</span> user friendly cards</li>
+            <li> <span>4</span> low fee</li>
+            <li> <span>5</span> broad acceptance</li>
+          </ul>
+        </section>
       </div>
+      <footer>
+        <div className="footer-one">
+          <section>
+            <h1><img src={Logo} alt="logo" /></h1>
+            <p>
+              a modern card for a modern world and advanced and up-to-date services for your convenience
+            </p>
+          </section>
+          <section>
+            <h2>Quick Access</h2>
+            <ul>
+              <li>About us</li>
+              <li>Services</li>
+              <li>careers</li>
+              <li>learn</li>
+              <li>branches</li>
+              <li>faq</li>
+              <li>blog</li>
+            </ul>
+          </section>
+        </div>
+        <div className="footer-two">
+          <p>to know the latest news and update, enter your email so we can contact you</p>
+          <form>
+            <input type="email" placeholder="Enter Email Address" required/>
+            <button>Subscribe <span> <ion-icon name="return-up-forward-outline"></ion-icon> </span></button>
+          </form>
+          <section className="contact">
+            <h3>contact us:</h3>
+            <ul>
+            <li>
+                <ion-icon name="logo-facebook"></ion-icon>
+              </li>
+              <li>
+                <ion-icon name="logo-instagram"></ion-icon>
+              </li>
+              <li>
+                <ion-icon name="logo-youtube"></ion-icon>
+              </li>
+              <li>
+                <ion-icon name="logo-twitter"></ion-icon>
+              </li>
+              <li>
+                <ion-icon name="logo-instagram"></ion-icon>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </footer>
     </div>
   );
 }
